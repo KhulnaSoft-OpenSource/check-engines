@@ -1,0 +1,34 @@
+{
+  "name": "@khulnasoft-opensource/check-engines",
+  "version": "1.2.0",
+  "license": "MIT",
+  "bin": {
+    "check-engines": "index.js"
+  },
+  "main": "index.js",
+  "author": "Md Sulaiman <infosulaimanbd@gmail.com>",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=3"
+  },
+  "bugs": "https://github.com/khulnasoft-opensource/check-engines/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/khulnasoft-opensource/check-engines.git"
+  },
+  "dependencies": {
+    "npm-install-checks": "^4.0.0"
+  },
+  "devDependencies": {
+    "@khulnasoft-opensource/conventional-commit": "^1.0.1",
+    "@khulnasoft-opensource/semantic-release-conventional-config": "^2.1.0"
+  },
+  "scripts": {
+    "push": "npx @khulnasoft-opensource/conventional-commit",
+    "semantic-release": "npx semantic-release",
+    "test": "node ."
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
